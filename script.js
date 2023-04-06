@@ -35,7 +35,8 @@ function calculate() {
     const volume = (weight / density) * 1000; // convert to g before dividing by density
 
     // Calculate the thickness of the weight plate in cm
-    const thickness = volume / (Math.PI * Math.pow(diameter / 2, 2));
+//     const thickness = volume / (Math.PI * Math.pow(diameter / 2, 2));
+    const thickness = volume / (Math.PI * Math.pow(diameter / 2, 2)) * 1.2;//(evaporated water 1.2)
     const radius = diameter / 2;
     const pipeDiementions = thickness;
 
