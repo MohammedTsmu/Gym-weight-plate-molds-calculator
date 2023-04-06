@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Plate Mold Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weight Plate Mold Calculator</h1>
+      <form>
+        <label for="weight">Weight (kg)</label>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          min="0"
+          step="0.1"
+          required
+        />
+        <label for="diameter">Diameter (cm)</label>
+        <input
+          type="number"
+          id="diameter"
+          name="diameter"
+          min="0"
+          step="0.1"
+          required
+        />
+        <button type="button" onclick="calculate()">Calculate</button>
+      </form>
+      <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
