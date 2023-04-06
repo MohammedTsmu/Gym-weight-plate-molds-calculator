@@ -52,3 +52,23 @@ function calculate() {
     <p>Pipe thickness: ${pipeDiementions}cm </p>
     <p>Circumference(Mold Length): ${circumference.toFixed(2)}cm </p>`;
 }
+
+
+// Get the input fields for weight and diameter
+const weightInput = document.getElementById("weight");
+const diameterInput = document.getElementById("diameter");
+
+// Add an event listener to each input field to listen for the "keydown" event
+weightInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        calculate();
+    }
+});
+
+diameterInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        calculate();
+    }
+});
